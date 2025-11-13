@@ -65,13 +65,13 @@ const HeroSection = () => {
               <img 
                 src={teamHero} 
                 alt="Expert team working together" 
-                className="w-full h-auto object-cover"
+                className="w-full h-auto object-cover block"
               />
               
               {/* Experience Badge */}
-              <div className="absolute bottom-8 right-8 bg-secondary text-secondary-foreground rounded-full w-32 h-32 flex flex-col items-center justify-center shadow-xl animate-scale-in">
-                <span className="text-4xl font-bold">3+</span>
-                <span className="text-sm font-medium text-center">Years of<br />Experience</span>
+              <div className="absolute bottom-2 right-4 md:bottom-4 md:right-8 bg-secondary text-secondary-foreground rounded-full w-24 h-24 md:w-32 md:h-32 flex flex-col items-center justify-center shadow-xl animate-scale-in">
+                <span className="text-2xl md:text-4xl font-bold">3+</span>
+                <span className="text-xs md:text-sm font-medium text-center">Years of<br />Experience</span>
               </div>
             </div>
           </div>
