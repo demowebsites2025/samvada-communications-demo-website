@@ -50,29 +50,10 @@ const ClientsSection = () => {
     <section className="py-16 bg-muted/30">
       <div className="container mx-auto px-4">
         <div className="bg-card rounded-3xl p-8 shadow-lg border border-border overflow-hidden">
-          <div className="flex items-center justify-between mb-8">
-            <div></div>
+          <div className="text-center mb-8">
             <h2 className="text-3xl md:text-4xl font-bold animate-fade-in">
               Trusted by Leading Brands
             </h2>
-            <div className="flex gap-2">
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => scroll('left')}
-                className="h-10 w-10 p-0"
-              >
-                <ChevronLeft size={16} />
-              </Button>
-              <Button
-                variant="outline"
-                size="sm"
-                onClick={() => scroll('right')}
-                className="h-10 w-10 p-0"
-              >
-                <ChevronRight size={16} />
-              </Button>
-            </div>
           </div>
 
           {/* Scrolling Container */}

@@ -11,7 +11,7 @@ const Footer = () => {
           <div className="animate-fade-in">
             <div className="flex items-center space-x-3 mb-4">
               <img src="/Logo.png" alt="Samvada Communications" className="h-12 w-12" />
-              <span className="text-lg font-bold">Samvada</span>
+              <span className="text-lg font-bold">Samvada Communications</span>
             </div>
             <p className="text-primary-foreground/80 mb-4">
               Delivering the best digital solutions with strategy, creativity, and impact.

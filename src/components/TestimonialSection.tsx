@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ChevronLeft, ChevronRight, Quote } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
@@ -25,6 +25,14 @@ const testimonials = [
 
 const TestimonialSection = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prev) => (prev + 1) % testimonials.length);
+    }, 5000); // Auto-scroll every 5 seconds
+
+    return () => clearInterval(interval);
+  }, []);
 
   const nextTestimonial = () => {
     setCurrentIndex((prev) => (prev + 1) % testimonials.length);
@@ -59,25 +67,7 @@ const TestimonialSection = () => {
             {/* Quote Icon */}
             <Quote className="text-secondary/20 absolute top-8 left-8" size={80} />
             
-            {/* Navigation Arrows */}
-            <div className="absolute top-8 right-8 flex space-x-2">
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={prevTestimonial}
-                className="hover:bg-muted rounded-full"
-              >
-                <ChevronLeft size={20} />
-              </Button>
-              <Button
-                variant="ghost"
-                size="icon"
-                onClick={nextTestimonial}
-                className="hover:bg-muted rounded-full"
-              >
-                <ChevronRight size={20} />
-              </Button>
-            </div>
+
 
             {/* Testimonial Content */}
             <div className="relative z-10 pt-12">
