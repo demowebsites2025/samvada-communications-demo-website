@@ -37,7 +37,7 @@ const services = [
     icon: MessageCircle,
     title: "WhatsApp API",
     description: "Connect with customers instantly and professionally using the WhatsApp API — automate, engage, and grow your business.",
-    image: whatsappApi,
+    image: "/whats app api.jpg",
   },
   {
     icon: Package,

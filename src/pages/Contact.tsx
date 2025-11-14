@@ -75,8 +75,8 @@ const Contact = () => {
                 className="bg-card rounded-2xl p-6 shadow-lg border border-border text-center hover:shadow-xl transition-shadow animate-fade-in"
                 style={{ animationDelay: `${index * 100}ms` }}
               >
-                <div className="w-14 h-14 mx-auto mb-4 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-primary-foreground">
-                  <info.icon size={28} />
+                <div className="w-14 h-14 mx-auto mb-4 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-primary-foreground hover:scale-110 hover:rotate-6 transition-all duration-300">
+                  <info.icon size={28} className="hover:animate-pulse" />
                 </div>
                 <h3 className="text-lg font-bold mb-3">{info.title}</h3>
                 {info.details.map((detail) => (
@@ -174,7 +174,7 @@ const Contact = () => {
             <div className="animate-slide-in-right">
               <div className="bg-card rounded-2xl p-2 shadow-lg border border-border h-full min-h-[600px]">
                 <iframe
-                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d124416.59639851665!2d74.74354884335937!3d13.341664599999998!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bbca4b6c7b4e839%3A0xb7f6f4a6d8f4a3e8!2sUdupi%2C%20Karnataka!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3888.1234567890123!2d74.774472!3d13.512833!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTPCsDMwJzQ2LjIiTiA3NMKwNDYnMjguMSJF!5e0!3m2!1sen!2sin!4v1620000000000!5m2!1sen!2sin"
                   width="100%"
                   height="100%"
                   style={{ border: 0, borderRadius: "1rem" }}

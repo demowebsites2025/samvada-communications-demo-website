@@ -79,7 +79,9 @@ const TestimonialSection = () => {
                 <img 
                   src={currentTestimonial.avatar} 
                   alt={currentTestimonial.author}
-                  className="w-16 h-16 rounded-full object-cover border-2 border-secondary/20"
+                  className={`w-16 h-16 rounded-full object-cover border-2 border-secondary/20 ${
+                    currentTestimonial.author === "Prashun Shetty" ? "object-top" : ""
+                  }`}
                 />
                 <div>
                   <h4 className="text-xl font-bold text-foreground">
