@@ -79,7 +79,7 @@ const services = [
       "Two-Way Communication",
       "Integration Support"
     ],
-    image: whatsappApi,
+    image: "/whats app api.jpg",
   },
   {
     icon: Package,
@@ -142,8 +142,8 @@ const Services = () => {
                 
                 {/* Service Content */}
                 <div className="p-6 space-y-4">
-                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-primary-foreground">
-                    <service.icon size={28} />
+                  <div className="w-14 h-14 rounded-xl bg-gradient-to-br from-primary to-secondary flex items-center justify-center text-primary-foreground hover:scale-110 hover:rotate-12 transition-all duration-300 group-hover:shadow-lg">
+                    <service.icon size={28} className="group-hover:animate-bounce" />
                   </div>
                   
                   <h3 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">
